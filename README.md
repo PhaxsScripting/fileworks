@@ -45,6 +45,7 @@ encodings, schema/type validation, field-specific business rules, and spreadshee
 workbook formats are outside this utility's scope. The first record is always
 treated as the header. Input limits are 20 MiB, 100,000 data records, and 1,000,000
 total cells. Files are parsed in memory; this is a bounded small-file utility.
+NUL bytes are rejected as a binary-input indicator.
 
 ## Explicit cleanup behavior
 

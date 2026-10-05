@@ -34,6 +34,8 @@ def read_csv(path, delimiter=None):
         content = raw.decode("utf-8-sig")
     except UnicodeDecodeError as exc:
         raise FileworksError("Input must be UTF-8 or UTF-8 with a BOM.") from exc
+    if "\0" in content:
+        raise FileworksError("NUL bytes found; input must be a plain UTF-8 CSV.")
     if delimiter is None:
         try:
             delimiter = csv.Sniffer().sniff(content[:65536], delimiters=",;\t|").delimiter

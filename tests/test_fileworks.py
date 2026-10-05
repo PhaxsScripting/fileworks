@@ -95,7 +95,7 @@ class FileworksTests(unittest.TestCase):
         self.assertEqual(self.output_rows(), [["a", "b"], ["1", "2"]])
 
     def test_malformed_quoting_encoding_and_empty_header_rejected(self):
-        for raw in (b'a,b\n"unterminated,2\n', b'a,b\n\xff,2\n', b'\na,b\n'):
+        for raw in (b'a,b\n"unterminated,2\n', b'a,b\n\xff,2\n', b'\na,b\n', b'a,b\n1,\0=1+1\n'):
             with self.subTest(raw=raw):
                 self.source.write_bytes(raw)
                 with self.assertRaises(FileworksError):
