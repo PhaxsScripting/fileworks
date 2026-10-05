@@ -6,6 +6,11 @@ Python standard library, performs no uploads or network requests, and runs no
 external programs. This repository includes synthetic demonstration data; it
 contains no customer results or revenue claims.
 
+For customer-specific rules, see the [fixed-scope services](SERVICES.md): $49
+one-file cleanup, $99 reusable CSV fixer, or $149 one local file workflow after
+review. Use a public scope request with synthetic examples only. Payment
+onboarding is pending; do not send unsolicited payments.
+
 Python 3.10 or newer is required. From this folder, run without installing:
 
 ```bash
