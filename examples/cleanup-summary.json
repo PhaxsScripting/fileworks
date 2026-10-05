@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "before": {
+    "schema_version": 1,
+    "input_bytes": 346,
+    "input_sha256": "d7eed77111fa59a9e73e78289b99a6b202a913990efd64591ffbae7e7e2ce2e2",
+    "encoding": "utf-8",
+    "delimiter": "comma",
+    "counts": {
+      "data_records": 8,
+      "columns": 4,
+      "empty_headers": 0,
+      "duplicate_headers": 0,
+      "width_mismatches": 0,
+      "fully_blank_records": 1,
+      "duplicate_records": 1,
+      "blank_data_cells": 5,
+      "formula_like_cells": 2
+    },
+    "empty_header_columns": [],
+    "duplicate_header_columns": [],
+    "examples": {
+      "width_mismatches": [],
+      "duplicate_records": [
+        3
+      ],
+      "formula_like_cells": [
+        {
+          "record": 7,
+          "column": 4
+        },
+        {
+          "record": 9,
+          "column": 3
+        }
+      ]
+    },
+    "example_limit": 20
+  },
+  "changes": {
+    "trimmed_cells": 8,
+    "blank_records_removed": 1,
+    "duplicate_records_removed": 1,
+    "formula_cells_escaped": 2
+  },
+  "output_data_records": 6,
+  "output_bytes": 275,
+  "output_sha256": "b86fa28ee1f0d4353eab0a64fbb707cd64eda5746819d6ef08ea6f62e7967480"
+}

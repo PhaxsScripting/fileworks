@@ -1,0 +1,49 @@
+name: Request a service scope check
+description: Describe a CSV cleanup or local file automation task using made-up examples.
+title: "Scope request: "
+labels: ["scope-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public issue. Do not attach private files, customer records, credentials, or payment information. Use synthetic examples only. This request does not book work or authorize payment. A supported payment route and written scope must be confirmed separately.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      options:
+        - CSV cleanup — $49 USD
+        - Reusable CSV fixer — $99 USD
+        - One local file workflow — $149 USD
+        - I need a scope review first
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What comes in, and what should come out?
+      description: Describe the file format, approximate rows/size, transformation rules, and target output. Keep business data private.
+      placeholder: "One CSV with id/name/region. Trim name whitespace, keep IDs as text, flag missing regions."
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Optional synthetic example
+      description: Use invented values only. No real customer data or attachments.
+      render: text
+  - type: input
+    id: environment
+    attributes:
+      label: Runtime environment
+      description: For scripts, give the operating system and Python version if known. No account identifiers.
+      placeholder: "Linux, Python 3.12"
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand this issue is public and have included no private data, secrets, or payment details.
+          required: true
+        - label: I understand the price and deliverable must be confirmed after scope review; this request is not an order.
+          required: true

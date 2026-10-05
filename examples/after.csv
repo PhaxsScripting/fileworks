@@ -1,0 +1,8 @@
+customer_id,email,amount,note
+0001,buyer01@example.com,19.95,regular order
+0002,buyer02@example.com,25.00,"delivery, afternoon"
+0003,buyer03@example.com,0.00,"line one
+line two"
+0004,buyer04@example.com,10.00,'=1+1
+0005,,11.00,pending
+0006,buyer06@example.com,'-12.00,refund

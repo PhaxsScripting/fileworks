@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "input_bytes": 275,
+  "input_sha256": "b86fa28ee1f0d4353eab0a64fbb707cd64eda5746819d6ef08ea6f62e7967480",
+  "encoding": "utf-8",
+  "delimiter": "comma",
+  "counts": {
+    "data_records": 6,
+    "columns": 4,
+    "empty_headers": 0,
+    "duplicate_headers": 0,
+    "width_mismatches": 0,
+    "fully_blank_records": 0,
+    "duplicate_records": 0,
+    "blank_data_cells": 1,
+    "formula_like_cells": 0
+  },
+  "empty_header_columns": [],
+  "duplicate_header_columns": [],
+  "examples": {
+    "width_mismatches": [],
+    "duplicate_records": [],
+    "formula_like_cells": []
+  },
+  "example_limit": 20
+}
